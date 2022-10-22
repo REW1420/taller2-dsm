@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Bprimary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent"
+            >
+
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tienda"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="30sp"
+                android:textColor="@color/titulos"
+                android:layout_margin="10sp"
+                />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnRegistro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/botones"
+                    android:text="@string/registro2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnProducto"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/btnProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/botones"
+                    android:text="@string/comprar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TableLayout
+                    android:layout_width="390dp"
+                    android:layout_height="565dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/fondo"
+                    android:paddingTop="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.216"
+                    tools:ignore="MissingConstraints">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="131dp"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="@string/idProducto"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/productoProducto"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/precio"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="131dp"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="@string/_1"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/simvastatina"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/_5"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="131dp"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="@string/_2"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/aspirina"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/_Precio2"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="131dp"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="@string/_4"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/omeprazol"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/_0_50"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="131dp"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="@string/_Precio4"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/lexotiroxina_s_dica"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/_10"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="131dp"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="@string/_5p"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/ramipril"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/_1p"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="131dp"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="@string/_6"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/amlodipina"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/_0_25"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="131dp"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="@string/_7"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/paracetamol"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/_0_15"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="131dp"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="@string/_8"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/atorvastatina"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/_1_15"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="131dp"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="@string/_9"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/salbutamol"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/_3_15"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+                    </TableRow>
+
+                    <TableRow android:layout_height="101dp">
+
+                        <TextView
+                            android:layout_width="131dp"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="@string/_10p"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/lansoprazol"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="@string/_5_15"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat,RtlHardcoded" />
+                    </TableRow>
+                </TableLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
